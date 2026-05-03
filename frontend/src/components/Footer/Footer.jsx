@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='footer' id='footer'>
         <div className="footer-content">
             <div className='footer-content-left'>
-                <img src={assets.logo} alt="" />
+                <img src={assets.logo2} alt="" />
                 <p>Foodlet is a food delivery service that connects you with the best local restaurants. We offer a wide variety of cuisines and dishes to choose from, all delivered straight to your door.</p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
@@ -29,12 +29,12 @@ const Footer = () => {
                 <p>Have questions or feedback? We'd love to hear from you!</p>
                 <ul>
                     <li>+1 (123) 456-7890</li>
-                    <li>support@tomato.com</li>
+                    <li>support@foodify.com</li>
                 </ul>
             </div>
         </div>
         <hr />
-        <p className="footer-bottom">Copyright 2026 © Tomato.com - All Rights Reserved.</p>
+        <p className="footer-bottom">Copyright 2026 © Foodify.com - All Rights Reserved.</p>
     </div>
   ) 
 }

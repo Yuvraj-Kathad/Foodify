@@ -9,6 +9,10 @@ const placeOrder = async (req,res) => {
 
     const frontend_url = "http://localhost:5173";
     try {
+        // console.log("PlaceOrder - userId:", req.body.userId);
+        // console.log("PlaceOrder - items:", req.body.items);
+        // console.log("PlaceOrder - amount:", req.body.amount);
+        
         const newOrder = new orderModel({
             userId: req.body.userId,
             items: req.body.items,
@@ -17,7 +21,10 @@ const placeOrder = async (req,res) => {
             // payment: req.body.payment
         })
         await newOrder.save();
+        // console.log("Order saved:", newOrder._id);
+        
         await userModel.findByIdAndUpdate(req.body.userId, {cartData: {}});
+        // console.log("Cart cleared");
 
         const line_items = req.body.items.map((item) => ({
             price_data: {

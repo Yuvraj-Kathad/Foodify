@@ -1,5 +1,6 @@
 import basket_icon from './basket_icon.png'
 import logo from './logo.png'
+import logo2 from './logo2.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
 import menu_1 from './menu_1.png'
@@ -62,6 +63,7 @@ import parcel_icon from './parcel_icon.png'
 
 export const assets = {
     logo,
+    logo2,
     basket_icon,
     header_img,
     search_icon,
@@ -262,7 +264,7 @@ export const food_list = [
         category: "Cake"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Garlic Mushroom",
         image: food_21,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
