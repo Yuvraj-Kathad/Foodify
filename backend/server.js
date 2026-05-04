@@ -15,14 +15,35 @@ const PORT = process.env.PORT || 4000
 
 // middleware
 app.use(express.json())
+// app.use(cors({
+//   origin: [
+//     "http://localhost:5173",
+//     "https://foodify-indol-eta.vercel.app",
+//     "https://foodify-e37j.vercel.app"
+//   ],
+//   credentials: true
+// }))
+
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://foodify-indol-eta.vercel.app",
-    "https://foodify-e37j.vercel.app"
-  ],
+  origin: function (origin, callback) {
+    const allowedOrigins = [
+      "http://localhost:5173",
+      "http://localhost:3000",
+      "https://foodify-indol-eta.vercel.app",
+      "https://foodify-e37j.vercel.app"
+    ];
+
+    // allow requests with no origin (like mobile apps / Postman)
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(null, false);
+    }
+  },
   credentials: true
-}))
+}));
 
 // db connection
 connectDB();
