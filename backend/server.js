@@ -9,14 +9,16 @@ import orderRouter from './routes/orderRoute.js'
 
 // app config
 const app = express()
-const port = 4000
+// const port = 4000
+const PORT = process.env.PORT || 4000
+
 
 // middleware
 app.use(express.json())
 app.use(cors({
   origin: [
     "https://foodify-indol-eta.vercel.app",
-    "https://your-admin.vercel.app"
+    "https://foodify-e37j.vercel.app"
   ],
   credentials: true
 }))
@@ -35,6 +37,10 @@ app.get('/', (req,res)=>{
     res.send("API Working")
 })
 
-app.listen(port, ()=>{
-    console.log(`Server started on http://localhost:${port}`)
+// app.listen(PORT, ()=>{
+//     console.log(`Server started on http://localhost:${PORT}`)
+// })
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server started on port ${PORT}`)
 })
