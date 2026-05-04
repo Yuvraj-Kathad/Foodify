@@ -17,6 +17,7 @@ const PORT = process.env.PORT || 4000
 app.use(express.json())
 app.use(cors({
   origin: [
+    "http://localhost:5173",
     "https://foodify-indol-eta.vercel.app",
     "https://foodify-e37j.vercel.app"
   ],
