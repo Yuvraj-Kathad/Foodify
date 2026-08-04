@@ -18,7 +18,6 @@ Example:
 ## ✨ Features
 
 * 🔐 User Authentication (Login/Signup)
-* 📊 Dashboard with analytics
 * ⚡ Fast and responsive UI
 * 🌐 API integration
 * 📁 Data management
@@ -105,8 +104,8 @@ This project is licensed under the MIT License.
 
 ## 👤 Author
 
-* Your Name
-* GitHub: https://github.com/your-username
-* LinkedIn: (optional)
+* Yuvraj Kathad
+* GitHub: https://github.com/Yuvraj-Kathad
+* LinkedIn: https://www.linkedin.com/in/yuvraj-kathad/
 
 ---
