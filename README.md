@@ -1,48 +1,61 @@
-# 🚀 Project Title
+# 🚀 Foodify
 
-Short one-line description of your project (what it does and why it exists).
+A full-stack food delivery web application that lets users browse food items, place orders, and manage food delivery operations through an admin panel.
 
 ---
 
 ## 📌 Overview
 
-This project is a **brief explanation** of what your application does.
-Explain the problem it solves and the main idea behind it.
+**Foodify** is a food delivery system built to provide a smooth online food ordering experience. It includes a user-facing frontend for browsing food items and placing orders, along with an admin panel for managing products, categories, and order-related data.
 
-Example:
-
-> This project is a web application that helps users manage tasks efficiently with real-time updates and analytics.
+The project is designed to demonstrate a practical full-stack application with a modern frontend, a Node.js and Express backend, and a PostgreSQL database.
 
 ---
 
 ## ✨ Features
 
-* 🔐 User Authentication (Login/Signup)
-* ⚡ Fast and responsive UI
-* 🌐 API integration
-* 📁 Data management
+* 🍔 Browse food items and categories
+* 🛒 Add items to cart and manage orders
+* 🔐 User authentication and secure access
+* 🧑‍💼 Admin panel for managing food items
+* 📦 Order management functionality
+* 🖼️ Image upload support for food items
+* ⚡ Responsive and user-friendly UI
+* 🌐 Full-stack integration with REST APIs
 
 ---
 
 ## 🛠️ Tech Stack
 
-* Frontend: React / HTML / CSS / JS
-* Backend: Node.js / Express
-* Database: MongoDB / MySQL
-* Other: REST APIs, Git
+* **Frontend:** React, JavaScript, HTML, CSS
+* **Backend:** Node.js, Express.js
+* **Database:** PostgreSQL
+* **Database Tool:** pgAdmin
+* **Other:** REST APIs, Multer, dotenv, CORS, UUID, Git
 
 ---
 
 ## 📂 Project Structure
 
-```
-project-root/
-│── src/
-│   ├── components/
-│   ├── pages/
-│   └── utils/
-│── public/
-│── package.json
+```bash
+foodify/
+│── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── assets/
+│   ├── public/
+│   └── package.json
+│
+│── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── uploads/
+│   ├── db/
+│   ├── server.js
+│   └── package.json
+│
 │── README.md
 ```
 
@@ -52,41 +65,67 @@ project-root/
 
 ### 1. Clone the repository
 
-```
-git clone https://github.com/your-username/your-repo-name.git
+```bash
+git clone https://github.com/Yuvraj-Kathad/Foodify.git
 ```
 
-### 2. Navigate to project
+### 2. Navigate to the project
 
-```
-cd your-repo-name
+```bash
+cd Foodify
 ```
 
 ### 3. Install dependencies
 
-```
+Install frontend dependencies:
+
+```bash
+cd frontend
 npm install
 ```
 
-### 4. Run the project
+Install backend dependencies:
 
+```bash
+cd ../backend
+npm install
 ```
+
+### 4. Configure environment variables
+
+Create a `.env` file in the backend folder and add the required variables such as:
+
+```env
+PORT=5000
+DATABASE_URL=your_postgresql_connection_string
+```
+
+### 5. Run the project
+
+Start the backend:
+
+```bash
+cd backend
+npm start
+```
+
+Start the frontend:
+
+```bash
+cd frontend
 npm start
 ```
 
 ---
 
-## 📸 Screenshots
-
-(Add screenshots or demo GIFs here)
-
----
-
 ## 🚀 Future Improvements
 
-* Add more features
-* Improve UI/UX
-* Optimize performance
+* Add online payment integration
+* Add order tracking
+* Improve recommendation features
+* Add better search and filtering
+* Enhance admin analytics dashboard
+* Improve mobile responsiveness further
 
 ---
 
@@ -104,8 +143,6 @@ This project is licensed under the MIT License.
 
 ## 👤 Author
 
-* Yuvraj Kathad
+* **Yuvraj Kathad**
 * GitHub: https://github.com/Yuvraj-Kathad
 * LinkedIn: https://www.linkedin.com/in/yuvraj-kathad/
-
----
